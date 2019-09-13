@@ -1,0 +1,59 @@
+<head>
+  <title>Survey Form</title>
+</head>
+<h1 id="title">Survey Form</h1>
+<link rel="stylesheet" href="styles.css">
+<body>
+  <div id="main">
+  
+  <p id="description">Let us know which Social Club you want to join at JECRC </p>
+  <form id="survey-form" action="">
+    <label class="labels" id="name-label" for="name">Name:</label>
+    <input id="name" class="input-field" name="name" type="text" placeholder="Enter Your Name" required>
+    <br><br>
+    <label class="labels" id="email-label" for="email">Email:</label>
+    <input type="email" id="email" class="input-field" name="email" placeholder="Enter Your E-Mail" required>
+    <br><br>
+    <label class="labels" id="number-label" for="Age">Age:</label>
+    <input autofocus type="number" id="number" class="input-field" name="Age" min="1" max="30" placeholder="Age" required>
+    <br><br>
+    <label class="labels" for="Social-Clubs">Select the Club of your interest:</label>
+    <select name="Social-Clubs" id="dropdown">
+      <option disabledvalue>Select from the list</option>
+      <option value="Zarurat">Zarurat</option>
+      <option value="Aashayein">Aashayein</option>
+      <option value="Suhasini">Suhasini</option>
+      <option value="Soch">Soch</option>
+    </select>
+    <br><br>
+    <label class="labels" for="radio">How likely are you to join:</label>
+    <div  class="radio-buttons">
+    <input name="radio" class="radio-buttons" type="radio" value='1'>Definitely
+    <br>
+    <input name="radio" class="radio-buttons" type="radio" value='2'>Maybe
+    <br>
+    <input name="radio" class="radio-buttons" type="radio" value='3'>Not Sure
+    </div>
+    <br><br>
+     <label class="labels" for="check-boxes">Tick all your verticals:</label>
+    <div class="check-boxes">  
+    <input type="checkbox" value='1'>Content Writing
+    <br>
+    <input type="checkbox" value='2'>Photography
+    <br>
+    <input type="checkbox" value='3'>Public Speaking
+    <br>
+    <input type="checkbox" value='4'>Digital Marketing
+    <br>
+    <input type="checkbox" value='5'>Event Management
+    <br>
+    <input type="checkbox" value='6'>Video Editing
+    </div>
+    <br><br>
+    <label class="labels" for="text-area">Tell us why you want to be a part of this club:</label>
+    <textarea  id="text-area" placeholder="Enter your reason here..!!"></textarea>
+    <br><br>
+    <button id=submit>Submit</button>
+  </form>
+  </div>
+</body>
